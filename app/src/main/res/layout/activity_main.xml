@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.vitin.mylaptop.project1_tempconverter.TempConverterActivity">
+
+    <TextView
+        android:text="Degrees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/degreelabel"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:text="Fahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_below="@+id/degreelabel"
+        android:layout_marginTop="31dp"
+        android:id="@+id/fahrenheitLabel" />
+
+    <EditText
+        android:text="Enter Temperator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/fahrenheitEdiText"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/fahrenheitLabel"
+        android:layout_alignBottom="@+id/fahrenheitLabel"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp" />
+
+    <TextView
+        android:text="Celsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_below="@+id/fahrenheitLabel"
+        android:layout_marginTop="31dp"
+        android:id="@+id/celsiusLabel" />
+
+    <TextView
+        android:text="000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/celsiusLabel"
+        android:layout_alignLeft="@+id/fahrenheitEdiText"
+        android:layout_alignStart="@+id/fahrenheitEdiText"
+        android:textSize="18sp"
+        android:id="@+id/celsiusTextView"
+        android:inputType="numberSigned" />
+
+
+</RelativeLayout>
